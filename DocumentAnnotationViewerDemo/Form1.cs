@@ -14,6 +14,7 @@ using Atalasoft.Imaging.Codec;
 using System.Reflection;
 using Atalasoft.Imaging;
 using Atalasoft.Annotate.Exporters;
+using WinDemoHelperMethods;
 
 
 namespace DocumentAnnotationViewerDemo
@@ -31,7 +32,7 @@ namespace DocumentAnnotationViewerDemo
             InitializeComponent();
             LoadAnnotationToolbarImages();
             EnableDisableMenuAndToolbarItems();
-            AtalaDemos.HelperMethods.PopulateDecoders(RegisteredDecoders.Decoders);
+            HelperMethods.PopulateDecoders(RegisteredDecoders.Decoders);
 
             this.documentAnnotationViewer1.SelectedIndexChanged += new EventHandler(documentAnnotationViewer1_SelectedIndexChanged);
 
@@ -151,7 +152,7 @@ namespace DocumentAnnotationViewerDemo
         {
             using (OpenFileDialog dlg = new OpenFileDialog())
             {
-                dlg.Filter = AtalaDemos.HelperMethods.CreateDialogFilter(true);
+                dlg.Filter = HelperMethods.CreateDialogFilter(true);
                 if (dlg.ShowDialog(this) == DialogResult.OK)
                 {
                     this.documentAnnotationViewer1.Open(dlg.FileName, -1);
@@ -192,7 +193,7 @@ namespace DocumentAnnotationViewerDemo
         {
             using (SaveFileDialog dlg = new SaveFileDialog())
             {
-                dlg.Filter = AtalaDemos.HelperMethods.CreateDialogFilter(false);
+                dlg.Filter = HelperMethods.CreateDialogFilter(false);
                 if (dlg.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
                     // slight change from the video...
