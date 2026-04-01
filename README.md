@@ -5,7 +5,15 @@ This demo should be used to gain a basic understanding of how the DotImage Docum
 
 The demo allows you to open various supported image files, automatically loading any supported embedded annotations. It also allows the creation/ editing of various annotation types and saving out the resulting file with annotaions being embedded for supported formats. Additionally, it shows the ease of use of the built in undo/redo manager, as well as cut, copy, and paste of annotations, and even full document printing with annotations.  
 
-Requires DotImage license. Optionally, requires PdfReader license in order to open / read PDF files.
+This is the C# version of this demo. We also offer a [VB.NET version]( https://github.com/AtalaSupport/DemoGallery_Desktop_DocumentAnnotationViewerDemo_VB_x64).
+
+
+## Prerequisites
+This demo assumes you have the Atalasoft DotImage SDK installed and licensed for DotImage Document Imaging. Optionally, you may optionally wish to have a licnse for our PdfReader add-on if you would like for this demo to be able to read images from PDF files.  
+
+You may also request a 30 day evaluation when installing / activating.
+
+[Download DotImage](https://www.atalasoft.com/BeginDownload/DotImageDownloadPage)
 
 
 ## Cloning
